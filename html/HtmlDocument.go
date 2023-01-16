@@ -1,8 +1,9 @@
 package _html
 
 import (
-	"github.com/PuerkitoBio/goquery"
 	"io"
+
+	"github.com/PuerkitoBio/goquery"
 )
 
 // HtmlDocument HTML文档对象

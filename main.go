@@ -1,13 +1,14 @@
 package main
 
 import (
-	"github.com/no-src/golongman/json"
-	"github.com/no-src/golongman/provider"
-	"github.com/no-src/log"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"time"
+
+	"github.com/no-src/golongman/json"
+	"github.com/no-src/golongman/provider"
+	"github.com/no-src/log"
 )
 
 func main() {

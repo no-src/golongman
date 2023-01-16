@@ -2,6 +2,7 @@ package model
 
 type Topic struct {
 	IssueToday
+	
 	//主键
 	TopicId int64
 	//主题名称

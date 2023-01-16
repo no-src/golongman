@@ -2,6 +2,7 @@ package model
 
 type PicWord struct {
 	IssueToday
+	
 	//主键Id
 	PicWordId int64
 

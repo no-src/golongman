@@ -1,11 +1,12 @@
 package provider
 
 import (
+	"strings"
+	"time"
+
 	"github.com/no-src/golongman/html"
 	"github.com/no-src/golongman/http"
 	"github.com/no-src/golongman/model"
-	"strings"
-	"time"
 )
 
 // RecommendTodayProvider 每日推荐单词抓取器
