@@ -3,7 +3,6 @@ package _http
 import (
 	"errors"
 	"io"
-	"io/ioutil"
 	"net/http"
 )
 
@@ -36,7 +35,7 @@ func GetString(url string) (result string, err error) {
 	if body == nil {
 		return StringEmpty, BodyNilError
 	}
-	bodyBytes, err := ioutil.ReadAll(body)
+	bodyBytes, err := io.ReadAll(body)
 	if err != nil {
 		return StringEmpty, BodyReadError
 	}

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"time"
@@ -26,7 +25,7 @@ func main() {
 		log.Error(err, "创建数据存储目录错误")
 		return
 	}
-	err = ioutil.WriteFile(fileName, []byte(jsonStr), os.ModePerm)
+	err = os.WriteFile(fileName, []byte(jsonStr), os.ModePerm)
 	if err != nil {
 		log.Error(err, "写入json文件错误")
 	}
