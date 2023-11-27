@@ -46,10 +46,10 @@ func NewRecommendTodayProvider() (pro *RecommendTodayProvider) {
 func (pro *RecommendTodayProvider) GetRecommendToday() (recommend *model.RecommendToday, err error) {
 	recommend = &model.RecommendToday{}
 	body, err := _http.Get(pro.SpiderUrl)
-	defer body.Close()
 	if err != nil {
 		return nil, err
 	}
+	defer body.Close()
 	docHtml, err := _html.NewHtmlDocument(body)
 	if err != nil {
 		return nil, err
