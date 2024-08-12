@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/PuerkitoBio/goquery v1.9.2
 	github.com/no-src/log v0.3.2
-	golang.org/x/net v0.27.0
+	golang.org/x/net v0.28.0
 )
 
 require (
