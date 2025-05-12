@@ -1,11 +1,11 @@
 module github.com/no-src/golongman
 
-go 1.19
+go 1.23.0
 
 require (
 	github.com/PuerkitoBio/goquery v1.9.2
 	github.com/no-src/log v0.3.2
-	golang.org/x/net v0.35.0
+	golang.org/x/net v0.40.0
 )
 
 require (
